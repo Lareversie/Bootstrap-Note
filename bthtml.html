@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>页面模板</title>
+    <link rel="stylesheet" href="bootstrap-3.4.1-dist/css/bootstrap.css">
+</head>
+
+<body>
+
+<!--<div class="container" style="background-color: #2aabd2;height: 500px">
+ (div class命名为container，
+ bootstrap中已经将container预设为两侧留白效果，匹配class类名直接使用)
+</div>-->
+
+<!--<div class="container-fluid" style="background-color: #2b669a;height: 500px">
+  (div class命名为container-fluid，此时没有两侧留白效果)
+</div>-->
+
+<!--bootstrap栅格式网格系统，通过定义容器大小，平分n份(默认分12份）,总数不超过n则在同一行显示,否则自动跳行,关键词container(容器）,row(行），col(列），xs,sm,md,lg(超小屏，小屏，中屏，大屏）
+在row中分列，作为行容器的直接子元素。bootstrap中源码可根据分辨率从而适应网页-->
+
+<!--col-md-n表示分列块所占的大小，col-md-offset表示向右偏移距离-->
+
+<!--列排序:改变列的方向，改变左右浮动，并且设置浮动的距离,
+pull向左偏移，push向右偏移，若与前方(pull)相同，则覆盖原元素块。
+若与后方(push)相同，则被后方的覆盖-->
+
+<!--列嵌套:在列中继续12份分割，通过class=row,不断嵌套-->
+
+<!--对h1-h6效果样式已经进行了覆盖，并提供对应类名h1-h6,副标题类名small,
+在文本中通过class=lead从而加粗文本显示，
+class=small可以缩小文本，class=strong从而更加粗文本显示效果-->
+
+<!--强调效果，可在div中通过class=text-(状态）来改变文本的显示颜色。
+其中muted(提示,浅灰）,primary(主要,蓝色）,success(成功，浅绿色），
+info(通知，浅蓝色），warning（警告，黄色），danger（危险，褐色）-->
+
+<!--文本对齐方式：通过div中class=text-(align)从而设置对齐方式.
+包括left,right,center,juststify(两端对齐)-->
+
+<!--去点列表:class=list-unstyled,水平显示列表:class=list-inline-->
+
+<!--code作单行代码高亮注释，pre作多行显示，kbd表示提示键输入,
+用class=pre-scrollable表示滚动条-->
+
+<!--class=table，基础表格
+table-striped,斑马线表格
+table-borded,边框表格
+table-hover,鼠标悬停高亮的表格
+table-condensed,紧凑型表格-->
+
+<!--可对table中的tr标签作响应式布局，
+利用success,warning,active,info,danger，将表格颜色变化-->
+
+<!--通过class=form-control控制input表单元素的格式,
+通过input-lg,input-sm控制大小-->
+
+<!--通过class=form-control对下拉框select控制样式，multiple作多选属性-->
+
+<!--textarea文本框中可通过form-control控制样式-->
+
+<!--复选框class=checkbox垂直显示，checkbox-inline水平显示,
+单选框class=radio竖直显示-->
+
+<!--通过class=btn实现基础按钮,或者附加样式class=btn btn-n(primary,info,danger)等实现不同状态
+可设置其他标签为按钮效果,并且可以设置按钮的大小.
+可通过btn-lg,btn-sm，btn-xs设置大小样式
+可设置属性disabled=disabled禁用按钮属性
+可在class中附加disabled给标签样式禁用，但仍可以正常使用-->
+
+<!--bstp中表单结构,个别的表单控件自动接受一些全局样式,
+向父元素<form></form>中添加class=form-(竖直或者水平),role=form-->
+
+<!--thumbail缩略图元素-->
+
+
+<form action="#" method="get" class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="uname" class="control-label col-md-4">姓名</label>
+        <div class="col-md-2">
+            <input type="text" id="uname" class="form-control" placeholder="输入姓名">
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
